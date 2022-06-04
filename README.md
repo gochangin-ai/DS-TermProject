@@ -21,7 +21,8 @@
 : Missing Value and Categorical Values control, Scaling
 
 # Model used
-## [multiple_linear_regression.py](https://github.com/gochangin-ai/DS-TermProject/blob/e2a040fe80631bdb2715805558c8e03f9faf2587/k_means.py)
+## [multiple_linear_regression.py](https://github.com/gochangin-ai/DS-TermProject/blob/e2a040fe80631bdb2715805558c8e03f9faf2587/multiple_linear_regression.py)
 Multiple Linear Regression
-## [k_means.py](https://github.com/gochangin-ai/DS-TermProject/blob/e2a040fe80631bdb2715805558c8e03f9faf2587/multiple_linear_regression.py)
+## [k_means.py](https://github.com/gochangin-ai/DS-TermProject/blob/e2a040fe80631bdb2715805558c8e03f9faf2587/k_means.py)
 K-means clustering algorithm
+
