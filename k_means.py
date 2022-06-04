@@ -25,6 +25,9 @@ def k_means(df, x):
     pred = KM.predict(clust_df)
     clust_df['clust'] = pred
 
+    return clust_df,centers
+
+def Clustering_visualize(clust_df,centers):
     targets = [0, 1, 2, 3]
     colors = ['r', 'g', 'b', 'pink']
 
@@ -36,3 +39,22 @@ def k_means(df, x):
     plt.ylabel('Component PCA Value')
     plt.title("Full Data")
     plt.show()
+
+
+def Clustering_Info(clust_df):
+    targets = [0, 1, 2, 3]
+    colors = ['r', 'g', 'b', 'pink']
+
+    pca_rank_first = clust_df[clust_df['clust'] == 0].sort_values('pca', ascending=False)
+    pca_rank_first.columns = ['pca', 'price', colors[0]]
+
+    pca_rank_second = clust_df[clust_df['clust'] == 1].sort_values('pca', ascending=False)
+    pca_rank_second.columns = ['pca', 'price', colors[1]]
+
+    pca_rank_third = clust_df[clust_df['clust'] == 2].sort_values('pca', ascending=False)
+    pca_rank_third.columns = ['pca', 'price', colors[2]]
+
+    pca_rank_fourth = clust_df[clust_df['clust'] == 3].sort_values('pca', ascending=False)
+    pca_rank_fourth.columns = ['pca', 'price', colors[3]]
+
+    return pca_rank_first, pca_rank_second, pca_rank_third, pca_rank_fourth
