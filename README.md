@@ -11,3 +11,5 @@
 ### Multiple Linear Regression
 ### K-means clustering algorithm
 
+## If you want to see it in step by step by step,
+## main.ipynb
