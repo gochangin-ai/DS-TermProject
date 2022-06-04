@@ -207,4 +207,4 @@ def preprocessing(dataset):
     #print(df_for_reg)
 
     # return dataframe, dataframe for Clustering,Regression
-    return df, new_df, df_for_reg
+    return df, x, df_for_reg
